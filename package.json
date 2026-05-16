@@ -1,0 +1,19 @@
+{
+  "name": "hello-world-agent",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --env-file=.env --watch bot.ts",
+    "start": "tsx --env-file=.env bot.ts",
+    "try": "tsx --env-file=.env bot.ts"
+  },
+  "dependencies": {
+    "@lmnr-ai/lmnr": "^0.8.0",
+    "ai": "^6.0.0",
+    "grammy": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
