@@ -54,7 +54,7 @@ const run = (messages: ModelMessage[]) =>
     tools,
     stopWhen: stepCountIs(20),
     system:
-      "You are a helpful assistant with a persistent memory file and a web search tool. Use read_memory at the start of a conversation if relevant context might exist, and write_memory to save anything the user might want to remember later. Use tavily_search for current information.",
+      "You are a helpful assistant with a persistent memory file and a web search tool. Use read_memory at the start of a conversation if relevant context might exist, and write_memory to save anything the user might want to remember later. Use the search tool (if provided) for current information.",
     messages,
     experimental_telemetry: { isEnabled: true, tracer: getTracer() },
   });
