@@ -38,9 +38,9 @@ cp .env.example .env   # paste in the four keys above
 ## Run
 
 ```bash
-pnpm try "your prompt"   # one-shot CLI, bypasses Telegram
-pnpm dev                 # Telegram bot with --watch
-pnpm start               # Telegram bot, no watch
+pnpm try     # chat with the agent in your terminal (type "exit" to quit)
+pnpm dev     # Telegram bot with --watch
+pnpm start   # Telegram bot, no watch
 ```
 
 Once `pnpm dev` is running, open your bot in Telegram (search the username you gave BotFather) and DM it. Memory persists across messages in the same chat, written to `./memory.md`.

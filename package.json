@@ -2,9 +2,9 @@
   "name": "hello-world-agent",
   "type": "module",
   "scripts": {
-    "dev": "tsx --env-file=.env --watch bot.ts",
-    "start": "tsx --env-file=.env bot.ts",
-    "try": "tsx --env-file=.env bot.ts"
+    "dev": "tsx --env-file=.env --watch bot.ts --mode telegram",
+    "start": "tsx --env-file=.env bot.ts --mode telegram",
+    "try": "tsx --env-file=.env bot.ts --mode cli"
   },
   "dependencies": {
     "@lmnr-ai/lmnr": "^0.8.0",
